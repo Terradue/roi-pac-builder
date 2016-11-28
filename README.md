@@ -95,7 +95,7 @@ To learn more and find information go to
 
 ### <a name="questions"></a>Questions, bugs, and suggestions
 
-Please file any bugs or questions as [issues](https://git.terradue.com/scoop/roi-pac.git/issues/new) or send in a pull request.
+Please file any bugs or questions as [issues](https://git.terradue.com/scoop/roi-pac/issues/new) or send in a pull request.
 
 ### <a name="license"></a>License
 
