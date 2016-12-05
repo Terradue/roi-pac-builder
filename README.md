@@ -29,8 +29,7 @@ Used in Cluster mode (a set of master and slave nodes), it supports the deployme
 
 FFTW: a C subroutine library for computing the discrete Fourier transform
 ```
-sudo yum install fftw
-sudo yum install fftw-static
+sudo yum install fftw fftw-static
 ```
 
 ### <a name="installation"></a>Installation
