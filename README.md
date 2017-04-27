@@ -39,12 +39,12 @@ cd roi-pac-builder
 
 * Download a clean copy of the ROI_PAC sources from http://www.openchannelfoundation.com/projects/ROI_PAC and store it into the */tmp* location on the Sandbox,
 
-* Untar and copy the ROI_PAC sources in the source folder directory *~/roi_pac/main/resources/sources/* with:
+* Untar and copy the ROI_PAC sources in the source folder directory *~/roi-pac-builder/main/resources/sources/* with:
 
 ```
 cd /tmp
-tar -xvzf roi_pac-src-3.0-1.1.tgz
-cp roi_pac-src-3.0-1.1 ~/roi_pac/main/resources/sources/
+tar -xvzf roi_pac-src-3.0.1.tgz
+cp -r roi_pac-src-3.0.1 ~/roi-pac-builder/src/main/resources/sources/
 ```
 
 * Install FFTW, a C subroutine library for computing the discrete Fourier transform:
