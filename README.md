@@ -13,7 +13,7 @@ This repository contains the build and package configurations and code for [ROI_
 
 ### <a name="getting-started"></a>Getting Started
 
-To perform the build and test the produced ROI_PAC package, you will need a Developer Cloud Sandbox, that can be either requested from:
+To build, package and test the ROI_PAC software using this automatic procedure, you will need a Developer Cloud Sandbox, that can be either requested from:
 * ESA [Geohazards Exploitation Platform](https://geohazards-tep.eo.esa.int) for GEP early adopters;
 * From [Terradue's Portal](http://www.terradue.com/partners), provided user registration approval.
 
@@ -42,9 +42,9 @@ git clone https://github.com/Terradue/roi-pac-builder
 cd roi-pac-builder
 ```
 
-* Download a clean copy of roi_pac software (http://www.openchannelfoundation.com/projects/ROI_PAC) and store it into /tmp,
+* Download a clean copy of the ROI_PAC sources from http://www.openchannelfoundation.com/projects/ROI_PAC and store it into the /tmp location on the Sandbox,
 
-* Untar and copy it in the source folder directory **~/roi_pac/main/resources/sources/** with:
+* Untar and copy the ROI_PAC sources in the source folder directory **~/roi_pac/main/resources/sources/** with:
 
 ```
 cd /tmp
@@ -52,13 +52,7 @@ tar -xvzf roi_pac-src-3.0-1.1.tgz
 cp roi_pac-src-3.0-1.1 ~/roi_pac/main/resources/sources/
 ```
 
-* Edit the pom.xml file with the correct path to the source file:
-
-```
-<sources_dir>${basedir}/src/main/resources/sources/roi_pac-3.0.1</sources_dir>
-```
-
-* Compile and package the rpm using the bash script **packager.sh**
+* Compile and package the RPM package using the bash script **packager.sh**:
 
 ```
 cd
@@ -66,13 +60,13 @@ cd roi-pac-builder
 ./packager.sh
 ```
 
-* Install the produced RPM package:
+* Install the RPM package with:
 
 ```
 sudo yum localinstall ~/roi_pac/target/rpm/roi_pac/RPMS/x86_64/roi_pac-3.0.1-1.x86_64.rpm
 ```
 
-* Install and test the ROI_PAC Application using the instructions provided in https://github.com/geohazards-tep/dcs-insar-roipac
+* Install and test the ROI_PAC Application using the instructions provided in https://github.com/geohazards-tep/dcs-insar-roipac.
 
 To learn more and find information go to:
 
