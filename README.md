@@ -56,7 +56,7 @@ sudo yum install fftw fftw-static -y
 * Install Java 7 with:
 
 ```
-sudo yum install java-1.7.0-openjdk
+sudo yum install java-1.7.0-openjdk -y
 export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/ 
 ```
 
