@@ -53,6 +53,13 @@ cp -r roi_pac-3.0.1 ~/roi-pac-builder/src/main/resources/sources/
 sudo yum install fftw fftw-static -y
 ```
 
+* Install Java 7 with:
+
+```
+sudo yum install java-1.7.0-openjdk
+export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/ 
+```
+
 * Compile and package the RPM package using the bash script `packager.sh`. Type:
 
 ```
@@ -64,7 +71,7 @@ cd roi-pac-builder
 * Install the RPM package with:
 
 ```
-sudo yum localinstall ~/roi_pac/target/rpm/roi_pac/RPMS/x86_64/roi_pac-3.0.1-1.x86_64.rpm
+sudo yum localinstall ~/roi-pac-builder/target/rpm/roi_pac/RPMS/x86_64/roi_pac-3.0.1-1.x86_64.rpm
 ```
 
 * Install and test the ROI_PAC Application, named _dcs-insar-roipac_, using the instructions provided in https://github.com/geohazards-tep/dcs-insar-roipac.
