@@ -44,7 +44,7 @@ cd roi-pac-builder
 ```
 cd /tmp
 tar -xvzf roi_pac-src-3.0.1.tgz
-cp -r roi_pac-src-3.0.1 ~/roi-pac-builder/src/main/resources/sources/
+cp -r roi_pac-3.0.1 ~/roi-pac-builder/src/main/resources/sources/
 ```
 
 * Install FFTW, a C subroutine library for computing the discrete Fourier transform:
